@@ -5,12 +5,12 @@ by Manuel Planton 2019
 
 for Musical Acoustics Seminar at the Institute for Electronic Music and Acoustics, Graz.
 
+Starting from a basic physical model of a clarinet out of the Pure Data waveguide library "acre/wg" by Winfried Ritsch, a physical modeling saxophone synthesizer has been developed.
+The [seminar paper](Seminararbeit_Manuel_Planton.pdf) is in german and shows the research and development.
 
-Starting from a basic physical model of a clarinet out of the Pure Data waveguide library "acre/wg" by Winfried Ritsch, a physical modeling saxophone synthesizer should be developed.
 
-
-Needed Libraries:
------------------
+Installation:
+-------------
 
 1. Install *iemlib*.
 
@@ -29,7 +29,6 @@ Files and directories:
 |pm_sax_development.pd | main pd patch for physical modeling saxophone development |
 |preset.txt            | presets for the main patch|
 |README.md             | this file       |
-|TODO.md               | todos           |
 
 
 Development and Comparison:
