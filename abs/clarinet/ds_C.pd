@@ -1,0 +1,12 @@
+#N canvas 306 226 468 344 10;
+#X obj 30 54 ds/register_map \$1 \$2/note;
+#X text 33 209 (c) GPL \, acre winfried ritsch;
+#X obj 30 109 wg/filt/pipebell_ds \$1 \$2/pipebell;
+#X obj 30 71 ds/register_map \$1 \$2/detune;
+#X obj 30 90 wg/blow/noise_ds \$1 \$2/blow;
+#X text 28 15 wg/clarinet/ds <storage domain> <id>;
+#X obj 30 129 ds/register_map \$1 \$2/blow/pressure;
+#X obj 30 149 ds/register_map \$1 \$2/wg/delay/fade;
+#X text 246 150 portamento;
+#X text 63 227 modified by Manuel Planton 2019;
+#X obj 30 169 ds/register_map \$1 \$2/reed/h_c;

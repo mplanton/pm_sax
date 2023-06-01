@@ -1,0 +1,5 @@
+#N canvas 811 402 450 300 10;
+#X text 30 262 Manuel Planton 2019;
+#X text 55 10 reed/exponential~_ds <storage domain> <id>;
+#X obj 58 41 acre/ds/register_map \$1 \$2/reed/h_c;
+#X obj 58 61 acre/ds/register_map \$1 \$2/reed/k;

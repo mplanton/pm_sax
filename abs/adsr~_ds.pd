@@ -1,0 +1,9 @@
+#N canvas 681 203 450 300 10;
+#X declare -path ../lib;
+#X text 42 6 adsr~_ds <storage domain> <id>;
+#X obj 39 33 acre/ds/register_map \$1 \$2/level;
+#X obj 275 11 declare -path ../lib;
+#X obj 39 53 acre/ds/register_map \$1 \$2/attack;
+#X obj 39 73 acre/ds/register_map \$1 \$2/decay;
+#X obj 39 93 acre/ds/register_map \$1 \$2/sustain;
+#X obj 39 113 acre/ds/register_map \$1 \$2/release;

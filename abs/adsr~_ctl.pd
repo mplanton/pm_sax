@@ -1,0 +1,29 @@
+#N canvas 161 128 450 300 10;
+#X obj 101 101 cnv 15 98 58 empty empty ADSR~/\$2 2 6 0 8 -233017 -66577
+0;
+#X obj 167 140 bng 15 250 50 0 empty empty t 4 8 0 10 -204786 -1 -1
+;
+#X obj 149 121 nbx 3 14 0 1e+37 0 0 \$1/level \$1/level level 0 -8
+0 10 -262144 -1 -1 1 256;
+#X obj 112 147 nbx 4 12 0 1e+37 0 0 \$1/release \$1/release R -8 6
+0 10 -262144 -1 -1 250 256;
+#X text 78 7 adsr~_ctl <id> <label>;
+#X obj 112 135 nbx 3 12 0 100 0 0 \$1/sustain \$1/sustain S -8 6 0
+10 -262144 -1 -1 97 256;
+#X obj 112 123 nbx 3 12 0 1e+37 0 0 \$1/decay \$1/decay D -8 6 0 10
+-262144 -1 -1 30 256;
+#X obj 112 111 nbx 3 12 0 1e+37 0 0 \$1/attack \$1/attack A -8 6 0
+10 -262144 -1 -1 18 256;
+#X text 248 49 A \, D and R in milliseconds;
+#X text 248 71 S in percent of the level;
+#X text 247 95 level not in dB \, but linear;
+#X text 231 260 Manuel Planton 2019;
+#X obj 187 103 vsl 12 53 0 1 0 0 empty \$1/monitor empty 0 -9 0 10
+-204786 -1 -1 0 1;
+#X obj 244 130 r \$1/trigger_monitor;
+#X obj 244 153 > 0;
+#X obj 244 179 sel 1;
+#X connect 13 0 14 0;
+#X connect 14 0 15 0;
+#X connect 15 0 1 0;
+#X coords 0 -1 1 1 100 60 2 100 100;

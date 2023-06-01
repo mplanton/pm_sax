@@ -1,0 +1,17 @@
+#N canvas 49 631 453 435 10;
+#X obj 101 101 cnv 15 98 198 empty empty sax:\$1 2 7 0 10 -228856 -66577
+0;
+#X obj 100 141 wg/blow/noise_ctl \$1/blow;
+#X obj 100 245 wg/filt/pipebell_ctl \$1/pipebell;
+#X obj 164 127 nbx 3 14 -1e+37 1e+37 0 0 \$1/detune \$1/detune detune
+0 -8 0 10 -204786 -1 -1 0 256;
+#X obj 100 127 nbx 3 14 -1e+37 1e+37 0 0 \$1/note \$1/note note 0 -8
+0 10 -204786 -1 -1 55 256;
+#X obj 100 182 wg/blow/pressure_ctl \$1/blow A;
+#X text 88 316 (c) GPL algorythmics \, acre \, winfried ritsch;
+#X text 116 337 Modified by Manuel Planton 2019;
+#X obj 165 168 nbx 3 12 0 1e+37 0 0 \$1/wg/delay/fade \$1/wg/delay/fade
+portamento -54 5 0 9 -262144 -1 -1 5 256;
+#X text 85 14 sax/ctl_A <id>;
+#X obj 100 207 ../reed/exponential~_ctl \$1 A;
+#X coords 0 -1 1 1 100 200 2 100 100;

@@ -1,0 +1,10 @@
+#N canvas 420 346 450 300 10;
+#X text 23 262 Manuel Planton 2019;
+#X obj 101 101 cnv 15 98 36 empty empty reed_exp_\$2 0 7 0 9 -261682
+-66577 0;
+#X obj 103 124 nbx 4 12 0 1e+37 0 0 \$1/reed/h_c \$1/reed/h_c h_c 2
+-7 0 10 -262144 -1 -1 1.8 256;
+#X obj 153 124 nbx 4 12 0 1e+37 0 0 \$1/reed/k \$1/reed/k k 2 -5 0
+10 -262144 -1 -1 51.4 256;
+#X text 54 6 reed/exponential~_ctl <id> <label>;
+#X coords 0 -1 1 1 100 38 2 100 100;
